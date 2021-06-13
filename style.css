@@ -1,5 +1,12 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
     display: grid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .center {
@@ -47,23 +54,28 @@ button:hover {
 button:focus {
     outline: blue solid thin;
 }
+nav {
+    margin: 0.5em;
+}
 
 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
-    margin: none;
-    padding: none;
+}
+
+.navBar {
+    display: inline-flex;
+    align-items: center;
 }
 
 li {
-    display: inline;
-    padding: 8px;
-    font-size: small;
+    font-size: smaller;
+    padding-inline: 8px;
 }
 
-.navLeft {
-    float: left;
-}
-
-.navRight {
-    float: right;
+#googleAccountImg {
+    border-radius: 50%;
 }
