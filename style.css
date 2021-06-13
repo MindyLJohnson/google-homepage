@@ -7,6 +7,8 @@ html {
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #5f6368;
 }
 
 .mainSearch {
@@ -19,8 +21,12 @@ html {
 .searchIcon {
     position: absolute;
     margin-left: 1.3em;
-    margin-top: 0.9em;
+    margin-top: 0.75em;
     color: #9aa0a6;
+}
+
+.searchIcon:hover {
+    cursor: default;
 }
 
 #search {
@@ -40,16 +46,17 @@ html {
 }
 
 button {
-    border: none;
+    border: 1px solid #f8f9fa;
     border-radius: 4px;
     padding: 5px 10px;
+    background: #f8f9fa;
     color: black;
     margin: 5px;
 }
 
 button:hover {
-    box-shadow: 1px 1px 3px #f2f2f2;
-    border: thin solid l#f2f2f2;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
     cursor: pointer;
 }
 
@@ -86,14 +93,44 @@ ul {
 }
 
 li {
-    font-size: smaller;
-    padding-inline: 0.75rem;
+    padding: 8px;
+}
+
+li:hover:not(.material-icons) {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li.material-icons {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+li.material-icons:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+    border-radius: 50%;
 }
 
 #googleAccountImg {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
     border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#googleAccountImg:hover {
+    background: #f2f2f2;
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
 
 #leafImg {
     height: 0.7rem;
+    padding-inline: 0.25rem;
 }
