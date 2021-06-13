@@ -4,37 +4,39 @@
 }
 
 html {
-    display: grid;
     -webkit-appearance: none;
     -moz-appearance: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.center {
+.mainSearch {
+    position: absolute;
+    top: 30%;
+    width: 100%;
     text-align: center;
-    margin-top: 15em;
 }
 
 .searchIcon {
     position: absolute;
     margin-left: 1.3em;
-    margin-top: 1em;
-    color: lightgray;
+    margin-top: 0.9em;
+    color: #9aa0a6;
 }
 
 #search {
-    border: thin solid lightgrey;
+    border: thin solid #dfe1e5;
     border-radius: 50px;
-    padding: 10px;
+    padding: 1rem;
     height: 30px;
-    width: 500px;
-    margin: 20px;
+    width: 50%;
+    margin: 1rem;
     text-indent: 2em;
 }
 
 #search:hover, #search:focus {
     outline: none;
-    border: thin solid lightgrey;
-    box-shadow: 1px 1px 5px lightgrey;
+    border: thin solid #f2f2f2;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
 button {
@@ -46,8 +48,8 @@ button {
 }
 
 button:hover {
-    box-shadow: 1px 1px 3px lightgrey;
-    border: thin solid lightgrey;
+    box-shadow: 1px 1px 3px #f2f2f2;
+    border: thin solid l#f2f2f2;
     cursor: pointer;
 }
 
@@ -56,27 +58,42 @@ button:focus {
 }
 
 header {
-    margin: 0.5em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background: #f2f2f2;
+    color: #9aa0a6;
 }
 
 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     list-style-type: none;
 }
 
-.navBar {
+.headerBar, .footerBar {
     display: inline-flex;
     align-items: center;
 }
 
 li {
     font-size: smaller;
-    padding-inline: 8px;
+    padding-inline: 0.75rem;
 }
 
 #googleAccountImg {
     border-radius: 50%;
+}
+
+#leafImg {
+    height: 0.7rem;
 }
