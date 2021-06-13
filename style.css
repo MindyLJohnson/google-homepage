@@ -54,7 +54,8 @@ button:hover {
 button:focus {
     outline: blue solid thin;
 }
-nav {
+
+header {
     margin: 0.5em;
 }
 
