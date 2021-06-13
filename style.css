@@ -47,3 +47,23 @@ button:hover {
 button:focus {
     outline: blue solid thin;
 }
+
+ul {
+    list-style-type: none;
+    margin: none;
+    padding: none;
+}
+
+li {
+    display: inline;
+    padding: 8px;
+    font-size: small;
+}
+
+.navLeft {
+    float: left;
+}
+
+.navRight {
+    float: right;
+}
